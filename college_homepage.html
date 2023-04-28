@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rizvi College Of Engineering</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FA -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: auto;
+        font-family: "Raleway", sans-serif;
+        overflow-x: hidden;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+      /* navbar start */
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #000;
+        padding: 5px 20px;
+      }
+      nav .logo img {
+        width: 500px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 10px;
+        transition: all 0.8s linear;
+      }
+      nav ul li a:hover {
+        border-bottom: 2px solid white;
+      }
+
+      /*  navbar end  */
+
+      /* About Us Start */
+      .about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 100px 0;
+      }
+      .about .clg_img {
+        width: 100%;
+      }
+      .about .clg_img img {
+        width: 600px;
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      .about_text {
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+      }
+      /* About Us end */
+
+      /* Department start */
+      .backgrnd {
+        background: hsl(210, 36%, 96%);
+      }
+      .department {
+        /* border-top: 2px solid black; */
+        text-align: center;
+        margin-top: 100px;
+        padding: 100px 0;
+      }
+      .department h1 {
+        font-size: 50px;
+        text-decoration: underline;
+      }
+      .department p {
+        padding: 30px 0;
+      }
+      .grid_container {
+        margin: 50px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+      }
+      .grid_container .grid_box {
+        background: white;
+        color: black;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        gap: 10px;
+        box-shadow: 5px 10px 8px #888888;
+        transition: all 1s linear;
+      }
+      .grid_container .grid_box i {
+        padding: 20px;
+        font-size: 30px;
+      }
+      .grid_container .grid_box .text {
+        text-align: justify;
+        padding-top: 20px;
+      }
+      .grid_container .grid_box .ai {
+        padding-right: 50px;
+      }
+      .grid_container .grid_box .text p {
+        padding: 20px 0;
+      }
+      .grid_container .grid_box:hover {
+        transform: scale(1.09);
+      }
+      /* Department end */
+
+      /* Faculty start */
+      .fac_heading {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        margin-top: 100px;
+      }
+      .faculty,
+      .faculty2 {
+        margin: 100px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        padding: 50px;
+        background-color: #000000;
+        background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+        color: white;
+        transition: all 0.5s linear;
+      }
+      .faculty {
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
+      .faculty2 {
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+      }
+      .faculty:hover {
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      .faculty2:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
+      .faculty .faculty_info,
+      .faculty2 .faculty_info {
+        text-align: justify;
+      }
+      .faculty .faculty_info p,
+      .faculty2 .faculty_info p {
+        padding-top: 20px;
+      }
+      .faculty .faculty_img img,
+      .faculty2 .faculty_img img {
+        border-radius: 50%;
+        width: 200px;
+      }
+      .faculty .faculty_info a,
+      .faculty2 .faculty_info a {
+        text-decoration: none;
+        color: cyan;
+      }
+      /* Faculty end */
+
+      /* research start */
+      .research {
+        padding: 100px 0;
+      }
+      .research .res_heading {
+        background: url(images/research.jpg) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+      }
+      .research .res_heading h1 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 50px;
+        letter-spacing: 10px;
+        font-weight: bold;
+      }
+      .res {
+        background: white;
+        width: 100%;
+        margin: 100px auto 0 auto;
+        padding: 30px 80px;
+        box-shadow: 5px 10px 8px #888888;
+      }
+      .res h2 {
+        text-transform: uppercase;
+        color: #1b1c62;
+        padding-bottom: 20px;
+        font-size: 32px;
+      }
+      .res ul {
+        margin-left: 20px;
+      }
+      .res ul li {
+        font-weight: bold;
+        padding: 20px 0;
+        font-size: 20px;
+      }
+      /* research end */
+
+      /* placement start */
+      .placement {
+        margin: 50px 0;
+      }
+      .placement .p_img img {
+        width: 700px;
+      }
+      .placement .p_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .placement .p_flex h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+      }
+      .placement .poster {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .placement .poster img {
+        width: 800px;
+      }
+      .placement .poster_text {
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+        padding: 50px 0;
+      }
+      .placement .poster_text p {
+        font-size: 20px;
+        padding-bottom: 30px;
+        word-spacing: 2px;
+      }
+      /* placement end */
+
+      /* contact start */
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
+        gap: 50px;
+        text-align: center;
+      }
+      .contact .contact_heading {
+        text-align: center;
+      }
+      .contact .contact_img img {
+        width: 500px;
+        border-radius: 20px;
+        border: 5px solid black;
+      }
+      .contact .contact_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: justify;
+        gap: 30px;
+      }
+      .contact .contact_text h2 {
+        font-size: 30px;
+      }
+      .contact .contact_text p {
+        font-size: 18px;
+      }
+      .contact_heading h1 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 50px;
+        padding-top: 100px;
+      }
+      .contact .contact_text a {
+        text-decoration: none;
+        color: blue;
+      }
+      /* contact end */
+
+      /* footer start */
+      footer{
+        background: black;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+      }
+      footer p{
+        word-spacing: 5px;
+        font-size: 20px;
+      }
+      /* footer end */
+
+      /* responsive start */
+      @media screen and (max-width: 1092px) {
+        nav .logo img {
+          width: 350px;
+        }
+        nav ul li a {
+          font-size: 15px;
+        }
+        .about .clg_img img {
+          width: 500px;
+        }
+        .about_text {
+          font-size: 18px;
+        }
+        .about .clg_img img {
+          width: 500px;
+        }
+        .about_text {
+          font-size: 18px;
+        }
+        .research .res_heading h1 {
+          font-size: 40px;
+        }
+        .res {
+          padding: 20px 70px;
+        }
+        .res h2 {
+          font-size: 25px;
+        }
+        .res ul li {
+          font-size: 18px;
+        }
+        .placement .p_flex {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .placement {
+          margin: 30px 0;
+        }
+        .placement .poster {
+          margin-top: 80px;
+        }
+        .contact_heading h1{
+          padding-top: 80px;
+        }
+      }
+      @media screen and (max-width: 1004px) {
+        nav .logo img {
+          width: 300px;
+        }
+        nav ul li a {
+          font-size: 12px;
+        }
+        .about {
+          margin: 80px 0;
+        }
+        .about .clg_img img {
+          width: 450px;
+        }
+        .about_text {
+          font-size: 15px;
+        }
+        .grid_container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 982px) {
+        nav .logo img {
+          width: 220px;
+        }
+        nav ul li a {
+          font-size: 10px;
+        }
+        .research .res_heading h1 {
+          font-size: 30px;
+        }
+        .placement .poster img {
+          width: 600px;
+        }
+        .placement {
+          margin: 20px 0;
+        }
+        .placement .p_img img {
+          width: 600px;
+        }
+        .placement .p_flex h1 {
+          font-size: 40px;
+        }
+        .placement .poster_text p {
+          font-size: 18px;
+        }
+        .contact {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 80px 0;
+        }
+      }
+      @media screen and (max-width: 873px) {
+        .about .clg_img img {
+          width: 400px;
+        }
+        .about_text {
+          font-size: 13px;
+        }
+      }
+      @media screen and (max-width: 792px) {
+        .about {
+          flex-direction: column;
+          margin: 50px 0;
+        }
+        .faculty,
+        .faculty2 {
+          flex-direction: column;
+          /* justify-content: center; */
+          gap: 20px;
+          padding: 25px;
+          margin: 70px 0;
+        }
+        .faculty .faculty_img img,
+        .faculty2 .faculty_img img {
+          border-radius: 50%;
+          width: 150px;
+        }
+        .fac_heading {
+          margin-top: 70px;
+        }
+        .research .res_heading h1 {
+          text-align: center;
+        }
+        .department h1 {
+          font-size: 40px;
+        }
+        .department p {
+          font-size: 15px;
+        }
+        .fac_heading {
+          font-size: 40px;
+        }
+        .contact_heading h1 {
+          font-size: 40px;
+          padding-top: 50px;
+        }
+        .contact .contact_text h2 {
+          font-size: 25px;
+        }
+        .contact .contact_text p {
+          font-size: 17px;
+        }
+        .contact {
+          padding: 50px 0;
+        }
+        footer p{
+          font-size: 18px;
+        }
+      }
+      @media screen and (max-width: 754px) {
+        .res {
+          padding: 20px 50px;
+        }
+        .res h2 {
+          font-size: 20px;
+        }
+        .res ul li {
+          font-size: 15px;
+          padding: 15px 0;
+        }
+        .placement .poster img {
+          width: 500px;
+        }
+
+        .placement .p_flex h1 {
+          font-size: 30px;
+        }
+        .placement .poster_text p {
+          font-size: 15px;
+        }
+        .placement .poster {
+          margin-top: 50px;
+        }
+        .placement .poster_text {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 738px) {
+        nav {
+          flex-direction: column;
+        }
+        .grid_container {
+          grid-template-columns: 1fr;
+        }
+        .grid_container .grid_box {
+          justify-content: center;
+        }
+      }
+      @media screen and (max-width: 651px) {
+        .res {
+          padding: 20px 30px;
+        }
+        .res h2 {
+          font-size: 18px;
+        }
+        .res ul li {
+          font-size: 12px;
+          padding: 10px 0;
+        }
+        .faculty .faculty_img img,
+        .faculty2 .faculty_img img {
+          border-radius: 50%;
+          width: 100px;
+        }
+        .contact .contact_img img{
+          width: 450px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .placement .p_img img {
+          width: 500px;
+        }
+        .placement {
+          margin: 15px 0;
+        }
+        .placement .p_flex h1 {
+          font-size: 30px;
+        }
+        .placement .poster_text p {
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-width: 570px) {
+        .placement .poster img {
+          width: 400px;
+        }
+        .placement .poster {
+          margin-top: 40px;
+        }
+        footer p{
+          font-size: 15px;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        nav ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .faculty .faculty_info p,
+        .faculty2 .faculty_info p {
+          padding-top: 15px;
+          font-size: 15px;
+        }
+        .fac_heading {
+          margin-top: 50px;
+        }
+        .faculty,
+        .faculty2 {
+          margin: 50px 0;
+        }
+        .placement .p_img img {
+          width: 400px;
+        }
+        .department h1 {
+          font-size: 30px;
+        }
+        .department p {
+          font-size: 12px;
+        }
+        .grid_container .grid_box i {
+          font-size: 20px;
+        }
+        .grid_container .grid_box .text h3 {
+          font-size: 20px;
+        }
+        .fac_heading {
+          font-size: 30px;
+        }
+        .contact_heading h1 {
+          font-size: 30px;
+          padding-top: 30px;
+        }
+        .contact .contact_text h2 {
+          font-size: 20px;
+        }
+        .contact .contact_text p {
+          font-size: 15px;
+        }
+        .contact .contact_img img{
+          width: 400px;
+        }
+        .contact{
+          padding: 30px 0;
+        }
+      }
+      @media screen and (max-width: 490px) {
+        .about .clg_img img {
+          width: 300px;
+        }
+        .container {
+          width: 90%;
+        }
+      }
+      @media screen and (max-width: 455px) {
+        .placement .p_img img {
+          width: 350px;
+        }
+
+        .placement .p_flex h1 {
+          font-size: 20px;
+        }
+        .placement .poster_text p {
+          font-size: 12px;
+        }
+        .placement .poster img {
+          width: 300px;
+        }
+        .placement .poster_text {
+          padding: 30px 0;
+        }
+        .grid_container .grid_box .text h3 {
+          font-size: 18px;
+        }
+        .contact .contact_img img{
+          width: 350px;
+        }
+        footer p{
+          font-size: 12px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .res {
+          padding: 20px 25px;
+        }
+        .res h2 {
+          font-size: 15px;
+        }
+        .res ul li {
+          font-size: 10px;
+          padding: 10px 0;
+        }
+        .research .res_heading h1 {
+          font-size: 20px;
+        }
+        .department h1 {
+          font-size: 25px;
+        }
+        .fac_heading {
+          font-size: 25px;
+        }
+        .contact_heading h1 {
+          font-size: 25px;
+        }
+      }
+      @media screen and (max-width: 342px) {
+        .placement .p_img img {
+          width: 300px;
+        }
+        .placement .poster img {
+          width: 250px;
+        }
+        .contact .contact_img img{
+          width: 300px;
+        }
+        footer p{
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-width: 330px) {
+        .about .clg_img img {
+          width: 250px;
+        }
+        .faculty .faculty_img img,
+        .faculty2 .faculty_img img {
+          border-radius: 50%;
+          width: 80px;
+        }
+        .faculty .faculty_info p,
+        .faculty2 .faculty_info p {
+          padding-top: 12px;
+          font-size: 12px;
+        }
+        .placement .p_img img {
+          width: 250px;
+        }
+        .placement .poster img {
+          width: 200px;
+        }
+        .placement .p_flex h1 {
+          font-size: 15px;
+          letter-spacing: 10px;
+        }
+        .placement .poster_text {
+          padding: 20px 0;
+        }
+      }
+      @media screen and (max-width:300px) {
+        .contact .contact_img img{
+          width: 250px;
+        }
+      }
+      /* responsive end */
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="logo">
+        <img src="images/logo2.webp" alt="Logo" />
+      </div>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#department">Department</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#placement">Placement</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- About Us Start -->
+    <div class="container">
+      <div class="about" id="about">
+        <div class="clg_img">
+          <img src="images/College.webp" alt="clg" />
+        </div>
+
+        <ul class="about_text">
+          <li>
+            Affiliated to the University of Mumbai, Rizvi College of Engineering
+            started offering computer engineering in the year 2008 with an
+            intake of 60.
+          </li>
+          <li>
+            The department focuses on producing best quality IT professionals by
+            imparting quality training, hands on experience and value education.
+          </li>
+          <li>
+            The department has a team of experienced and competent faculties to
+            train students not only with textual and practical knowledge but
+            also with exposing them with ever growing technology.
+          </li>
+          <li>
+            We have well established laboratories for conducting practicals
+            related to the core courses of the department and other important
+            interdisciplinary courses. The classrooms and laboratories have well
+            equipped environment with audio-visual facilities.
+          </li>
+          <li>
+            The students are guided for real time projects on research areas
+            like cloud computing, image processing, data mining, security
+            etc.Regular workshops are also conducted on platforms like ethical
+            hacking, android, embedded systems, robotics, and cyber security.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- About Us end -->
+
+    <!-- Department start -->
+    <section class="backgrnd">
+      <div class="container">
+        <div class="department" id="department">
+          <h1>Courses Offered</h1>
+          <p>
+            Approved by AICTE | Recognized by DTE | Affiliated to University of
+            Mumbai | Accredited B+ by NAAC
+          </p>
+          <div class="grid_container">
+            <div class="grid_box">
+              <i class="fa-solid fa-computer"></i>
+              <div class="text">
+                <h3>Computer Engineering</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+            <div class="grid_box">
+              <i class="fa-solid fa-building"></i>
+              <div class="text">
+                <h3>Civil Engineering</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+            <div class="grid_box">
+              <i class="fa-solid fa-gears"></i>
+              <div class="text">
+                <h3>Mechanical Engineering</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+            <div class="grid_box item4">
+              <i class="fa-solid fa-database"></i>
+              <div class="text ai">
+                <h3>Artifical Intelligence & Data Science</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+            <div class="grid_box">
+              <i class="fa-solid fa-bolt"></i>
+              <div class="text">
+                <h3>Electronical Engineering</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+            <div class="grid_box">
+              <i class="fa-solid fa-flask-vial"></i>
+              <div class="text">
+                <h3>Chemical Engineering</h3>
+                <p>Intake: 60</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Department end -->
+
+    <!-- Faculty start -->
+    <div class="container" id="faculty">
+      <h1 class="fac_heading">Faculty Profile</h1>
+      <div class="faculty">
+        <div class="faculty_img">
+          <img src="images/professor.jpeg" alt="professor" />
+        </div>
+        <div class="faculty_info">
+          <p>Prof. Shiburaj Pappu - Professor - ( Head of Department )</p>
+          <p>M.E., B.E.</p>
+          <p>Experience : 13 Years</p>
+          <p>
+            Email : <a href="#">shiburaj@eng.rizvi.edu.in</a> , Website:
+            <a href="#">shiburaj.com</a>
+          </p>
+          <p>
+            Research Interest : Full Stack Web Development, Cloud Computing,
+            Computer Networking, Soft Computing, Algorithms, Programming.
+          </p>
+        </div>
+      </div>
+      <div class="faculty2">
+        <div class="faculty_info">
+          <p>Prof. Mohammed Juned - Assistant Professor - ( Co-ordinator )</p>
+          <p>M.E., B.E.</p>
+          <p>Experience : 11 Years</p>
+          <p>Email : <a href="#"> msjunaid@eng.rizvi.edu.in</a></p>
+          <p>
+            Research Interest : Computer Networking, Wireless Communication.
+          </p>
+        </div>
+        <div class="faculty_img">
+          <img src="images/professor2.jpg" alt="professor" />
+        </div>
+      </div>
+    </div>
+    <!-- Faculty end -->
+
+    <!-- Research start -->
+    <div class="backgrnd">
+      <div class="container" id="research">
+        <div class="research">
+          <div class="res_heading">
+            <h1>Research & Development</h1>
+          </div>
+          <div class="res">
+            <h2>Focus of research & development activities</h2>
+            <ul>
+              <li>
+                Basic research in core engineering resulting in processes and
+                products
+              </li>
+              <li>
+                Providing software solutions to automate the administrative work
+                leading towards paperless environment which was appreciated by
+                print media
+              </li>
+              <li>
+                To become a leading entity in transforming the diverse class of
+                learners into innovators, analyzers and entrepreneurs competent
+                to develop eco-friendly sustainable solutions and work in
+                multi-disciplinary environment to meet the global challenges and
+                contribute towards nation building.
+              </li>
+              <li>
+                To bridge the industry - academia gap through curriculum
+                enrichment activities for industry readiness.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Research end -->
+
+    <!-- placement start -->
+    <div class="container">
+      <div class="placement" id="placement">
+        <div class="p_flex">
+          <div class="p_img">
+            <img src="images/4565.jpg" alt="placement" />
+          </div>
+          <h1>Placement</h1>
+        </div>
+        <div class="poster">
+          <img src="images/Placement-poster.webp" alt="poster" />
+        </div>
+        <div class="poster_text">
+          <p>
+            In the present scenario of globalization, there is tremendous demand
+            for skilled manpower particularly in the area of Engineering and
+            Technology. The education of a future professional engineer cum
+            manager is incomplete without the exposure to working in an
+            organization. Therefore, the Training and Placement (T&P) cell was
+            set up with a view to provide necessary impetus to launch our
+            students into the real world where cut-throat competition is the
+            order of the day. The Training and Placement Cell plays a vital role
+            in finding suitable job opportunities for students and at same time
+            tying up with industries and professional organizations for fruitful
+            and mutually beneficial linkages. Training and Placement cell is a
+            must to explore the possibilities of training for the undergraduate
+            students as well as employment to the outgoing BE students of the
+            college.
+          </p>
+          <p>
+            RCOE maintains good relations with corporate houses being a perfect
+            host for educationists and entrepreneurs. Our T&P cell works round
+            the year to ensure successful and respectable placements with
+            esteemed organizations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- placement end -->
+
+    <!-- contact us start -->
+    <div class="backgrnd">
+      <div class="container contact_heading" id="contact">
+        <h1>Contact Us</h1>
+        <div class="contact">
+          <div class="contact_text">
+            <h2>Rizvi College Of Engineering</h2>
+            <p>
+              <i
+                >New Rizvi Educational Complex, Off. Carter Road, Bandra (W),
+                <br />
+                Mumbai - 400 050.</i
+              >
+            </p>
+            <p><b>Phone:</b>022 26043866</p>
+            <p><b>Fax: </b>022 26043840</p>
+            <p><b>E-mail: </b><a href="#">info@eng.rizvi.edu.in</a></p>
+          </div>
+          <div class="contact_img">
+            <img src="images/college2.webp" alt="college" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact us end -->
+
+    <!-- Footer start -->
+    <footer>
+      <p>Copyright &copy; Ansari Mohd Naqeeb All right reserved</p>
+    </footer>
+    <!-- Footer end -->
+  </body>
+</html>
